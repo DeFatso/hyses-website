@@ -1,0 +1,139 @@
+/* Navbar.css */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px; /* STANDARD HEIGHT */
+  background: #19253A; /* YOUR BRAND COLOR */
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Container */
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.nav-logo img {
+  height: 120px; /* BIGGER LOGO */
+  width: auto;
+  object-fit: contain;
+}
+
+/* Desktop Links */
+.nav-menu-desktop {
+  display: flex;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white; /* WHITE LINKS */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* Hover Color */
+.nav-links li a:hover {
+  color: #F85F1C; /* ORANGE */
+}
+
+/* Mobile Menu Button */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger {
+  width: 25px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 100%;
+  background: white; /* WHITE ICON */
+  transition: all 0.3s ease;
+}
+
+/* Hamburger Animation */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Mobile Menu */
+.nav-menu-mobile {
+  position: fixed;
+  top: 80px; /* match navbar height */
+  left: -100%;
+  width: 100%;
+  height: calc(100vh - 80px);
+  background: #19253A; /* SAME AS NAVBAR */
+  transition: left 0.3s ease;
+  z-index: 999;
+}
+
+.nav-menu-mobile.active {
+  left: 0;
+}
+
+.nav-links-mobile {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.nav-links-mobile a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.nav-links-mobile a:hover {
+  color: #F85F1C;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-menu-desktop {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
