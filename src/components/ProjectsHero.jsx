@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import "../styles/ProjectsHero.css";
 
 function ProjectsHero() {
@@ -7,32 +6,16 @@ function ProjectsHero() {
       <div className="projects-hero-container">
         <div className="projects-hero-text">
           <p className="projects-hero-eyebrow">
-            Our Portfolio & Success Stories
+            Our Work & Operations
           </p>
 
-          <h1>Delivering Excellence Through Every Project</h1>
+          <h1>Engineering in Motion</h1>
 
           <p className="projects-hero-description">
-            Explore our completed hydraulic and engineering projects. From
-            system installations to major repairs, see how Hyses delivers
-            reliable results for industrial clients.
+            Explore a visual showcase of Hyses hydraulic systems, workshop
+            operations, field service activities, repairs, and industrial
+            engineering solutions delivered across multiple sectors.
           </p>
-
-          <div className="projects-hero-actions">
-            <a
-              href="#rock-breaker-repair"
-              className="projects-hero-btn projects-hero-btn-primary"
-            >
-              View Projects
-            </a>
-
-            <Link
-              to="/contact"
-              className="projects-hero-btn projects-hero-btn-secondary"
-            >
-              Start Your Project
-            </Link>
-          </div>
         </div>
       </div>
     </section>

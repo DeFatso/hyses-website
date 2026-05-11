@@ -18,6 +18,7 @@ const ContactInfo = () => {
           <div className="contact-details-grid">
             <div className="contact-detail-card">
               <span className="contact-detail-icon">📍</span>
+
               <div>
                 <h4>Physical Address</h4>
                 <p>67 Van Rensburg Avenue</p>
@@ -27,6 +28,7 @@ const ContactInfo = () => {
 
             <div className="contact-detail-card">
               <span className="contact-detail-icon">☎</span>
+
               <div>
                 <h4>Office Number</h4>
                 <p>+27 10 023 4807</p>
@@ -35,6 +37,7 @@ const ContactInfo = () => {
 
             <div className="contact-detail-card">
               <span className="contact-detail-icon">✉</span>
+
               <div>
                 <h4>Email Address</h4>
                 <p>info@hyses.co.za</p>
@@ -43,6 +46,7 @@ const ContactInfo = () => {
 
             <div className="contact-detail-card">
               <span className="contact-detail-icon">👥</span>
+
               <div>
                 <h4>Direct Contacts</h4>
                 <p>Leeroy: +27 66 201 3689</p>
@@ -50,9 +54,23 @@ const ContactInfo = () => {
               </div>
             </div>
           </div>
+        </div>
+
+        <div className="contact-map-wrapper">
+          <div className="contact-map-card">
+            <iframe
+              title="Hyses Location Map"
+              src="https://www.google.com/maps?q=67%20Van%20Rensburg%20Avenue%20Klipfontein%20Witbank&output=embed"
+              loading="lazy"
+              allowFullScreen
+            ></iframe>
+          </div>
 
           <div className="contact-info-actions">
-            <a href="tel:+27100234807" className="contact-info-btn primary">
+            <a
+              href="tel:+27100234807"
+              className="contact-info-btn primary"
+            >
               Call Office
             </a>
 
@@ -65,15 +83,6 @@ const ContactInfo = () => {
               WhatsApp
             </a>
           </div>
-        </div>
-
-        <div className="contact-map-card">
-          <iframe
-            title="Hyses Location Map"
-            src="https://www.google.com/maps?q=67%20Van%20Rensburg%20Avenue%20Klipfontein%20Witbank&output=embed"
-            loading="lazy"
-            allowFullScreen
-          ></iframe>
         </div>
       </div>
     </section>

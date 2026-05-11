@@ -1,8 +1,8 @@
 .contact-info-section {
   width: 100%;
-  padding: 6rem 7vw;
-  background: #46566b;
-  color: #ffffff;
+  padding: 7rem 7vw 6rem;
+  background: #d9d9d9;
+  color: #071625;
 }
 
 .contact-info-container {
@@ -10,9 +10,9 @@
   max-width: 1220px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 0.95fr 1.05fr;
+  grid-template-columns: 0.9fr 1.1fr;
   gap: 4rem;
-  align-items: center;
+  align-items: stretch;
 }
 
 .contact-info-label {
@@ -24,7 +24,13 @@
   margin-bottom: 1rem;
 }
 
+.contact-info-content {
+  display: flex;
+  flex-direction: column;
+}
+
 .contact-info-content h2 {
+  color: #071625;
   font-size: clamp(2.2rem, 4vw, 4rem);
   line-height: 1.05;
   letter-spacing: -2px;
@@ -33,8 +39,7 @@
 
 .contact-info-text {
   max-width: 560px;
-  width: 100%;
-  color: #cbd5e1;
+  color: #4d5b6b;
   font-size: 1.02rem;
   line-height: 1.8;
   margin-bottom: 2rem;
@@ -44,63 +49,83 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
-  width: 100%;
 }
 
 .contact-detail-card {
   display: flex;
   gap: 1rem;
   align-items: flex-start;
-  padding: 1.2rem;
-  border-radius: 22px;
-  background: rgba(255, 255, 255, 0.07);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  backdrop-filter: blur(12px);
+  padding: 1.05rem 1.2rem;
+  border-radius: 20px;
+  background: #ffffff;
+  border: 1px solid #d3dbe5;
   transition: 0.3s ease;
-  width: 100%;
 }
 
 .contact-detail-card:hover {
   transform: translateY(-4px);
-  border-color: rgba(248, 95, 28, 0.55);
-  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(248, 95, 28, 0.45);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
 }
 
 .contact-detail-icon {
-  width: 46px;
-  height: 46px;
-  min-width: 46px;
-  border-radius: 15px;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  border-radius: 14px;
   background: #f85f1c;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
+  color: #ffffff;
 }
 
 .contact-detail-card h4 {
   font-size: 1rem;
   margin-bottom: 0.35rem;
-  color: #ffffff;
+  color: #071625;
 }
 
 .contact-detail-card p {
-  color: #cbd5e1;
+  color: #5f6b7a;
   font-size: 0.95rem;
-  line-height: 1.55;
+  line-height: 1.5;
+}
+
+.contact-map-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 1.5rem;
+}
+
+.contact-map-card {
+  width: 100%;
+  height: 520px;
+  position: relative;
+  border-radius: 32px;
+  overflow: hidden;
+  border: 1px solid #d3dbe5;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.12);
+  background: #ffffff;
+}
+
+.contact-map-card iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  filter: grayscale(10%);
 }
 
 .contact-info-actions {
-  margin-top: 2rem;
+  width: 100%;
   display: flex;
   gap: 1rem;
-  flex-wrap: wrap;
-  width: 100%;
 }
 
 .contact-info-btn {
-  min-width: 145px;
-  width: auto;
+  flex: 1;
   padding: 0.95rem 1.5rem;
   border-radius: 999px;
   text-decoration: none;
@@ -112,39 +137,17 @@
 .contact-info-btn.primary {
   background: #f85f1c;
   color: #ffffff;
-  box-shadow: 0 16px 34px rgba(248, 95, 28, 0.28);
+  box-shadow: 0 16px 34px rgba(248, 95, 28, 0.22);
 }
 
 .contact-info-btn.whatsapp {
   background: #25d366;
   color: #ffffff;
-  box-shadow: 0 16px 34px rgba(37, 211, 102, 0.2);
+  box-shadow: 0 16px 34px rgba(37, 211, 102, 0.16);
 }
 
 .contact-info-btn:hover {
   transform: translateY(-3px);
-}
-
-.contact-map-card {
-  width: 100%;
-  height: 0;
-  padding-bottom: 75%; /* 4:3 aspect ratio (height is 75% of width) */
-  position: relative;
-  border-radius: 32px;
-  overflow: hidden;
-  border: 1px solid rgba(248, 95, 28, 0.35);
-  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.35);
-  background: rgba(255, 255, 255, 0.06);
-}
-
-.contact-map-card iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-  filter: grayscale(20%) contrast(95%);
 }
 
 @media (max-width: 1020px) {
@@ -153,8 +156,12 @@
     gap: 3rem;
   }
 
+  .contact-map-wrapper {
+    justify-content: flex-start;
+  }
+
   .contact-map-card {
-    padding-bottom: 56.25%; /* 16:9 aspect ratio for better mobile viewing */
+    height: 420px;
   }
 }
 
@@ -168,8 +175,8 @@
   }
 
   .contact-map-card {
+    height: 340px;
     border-radius: 24px;
-    padding-bottom: 56.25%; /* Maintain 16:9 on mobile */
   }
 
   .contact-info-actions {
@@ -179,16 +186,8 @@
   .contact-info-btn {
     width: 100%;
   }
-  
-  .contact-detail-icon {
-    width: 14%;
-    min-width: 40px;
-    max-width: 46px;
-    height: auto;
-    aspect-ratio: 1 / 1;
-  }
-  
+
   .contact-detail-card {
-    padding: 4%;
+    padding: 1.1rem;
   }
 }

@@ -23,7 +23,7 @@ const CTABanner = () => {
         </div>
 
         <div className="cta-banner-actions">
-          <a href="#contact" className="cta-primary-btn">
+          <a href="contact" className="cta-primary-btn">
             Get a Quote
           </a>
 

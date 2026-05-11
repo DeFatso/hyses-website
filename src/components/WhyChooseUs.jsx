@@ -1,5 +1,6 @@
 // src/components/WhyChooseUs.jsx
 import React from "react";
+import { useNavigate } from "react-router-dom"; // Add this import
 import "../styles/WhyChooseUs.css";
 
 import WhyChooseUsImage from "../assets/why-choose-us-main.jpg";
@@ -12,6 +13,8 @@ import HydraulicMaintenanceImg from "../assets/hydraulic-maintenance.jpg";
 import IndustrialEquipmentImg from "../assets/industrial-equipment.jpg";
 
 const WhyChooseUs = () => {
+  const navigate = useNavigate(); // Initialize navigate
+
   const features = [
     {
       id: 1,
@@ -53,6 +56,10 @@ const WhyChooseUs = () => {
     { value: "15+", label: "Industry Awards", delay: "0.4s" },
     { value: "24/7", label: "Emergency Support", delay: "0.5s" },
   ];
+
+  const handleLearnMore = () => {
+    navigate("/about");
+  };
 
   return (
     <section className="why-choose-us">
@@ -121,7 +128,7 @@ const WhyChooseUs = () => {
             </div>
 
             <div className="cta-wrapper">
-              <button className="cta-button">
+              <button className="cta-button" onClick={handleLearnMore}>
                 Learn More About Us
                 <svg className="arrow-icon" viewBox="0 0 24 24" fill="none">
                   <path
