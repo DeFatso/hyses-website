@@ -75,7 +75,7 @@ const ContactInfo = () => {
             </a>
 
             <a
-              href="https://wa.me/27662013689"
+              href="https://wa.me/27665203741"
               target="_blank"
               rel="noreferrer"
               className="contact-info-btn whatsapp"

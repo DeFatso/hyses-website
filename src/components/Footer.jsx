@@ -41,7 +41,7 @@ const Footer = () => {
 
             <div className="footer-socials">
               <a
-                href="https://wa.me/27662013689"
+                href="https://wa.me/27665203741"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="WhatsApp"
@@ -124,7 +124,7 @@ const Footer = () => {
 
               <div>
                 <p className="contact-label">WhatsApp</p>
-                <a href="tel:+27662013689">+27 66 201 3689</a>
+                <a href="tel:+27665203741">+27 66 520 3741</a>
               </div>
             </div>
 
@@ -207,7 +207,7 @@ const Footer = () => {
         </a>
 
         <a
-          href="https://wa.me/27662013689"
+          href="https://wa.me/27665203741"
           target="_blank"
           rel="noreferrer"
           className="sticky-whatsapp"
