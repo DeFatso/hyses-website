@@ -35,7 +35,7 @@ const ContactExtras = () => {
       <div className="sticky-contact">
         <a href="tel:+27100234807">Call Office</a>
         <a
-          href="https://wa.me/27662013689"
+          href="https://wa.me/27665203741"
           target="_blank"
           rel="noopener noreferrer"
           className="whatsapp-link"
@@ -45,7 +45,7 @@ const ContactExtras = () => {
       </div>
 
       <a
-        href="https://wa.me/27662013689"
+        href="https://wa.me/27665203741"
         target="_blank"
         rel="noopener noreferrer"
         className="floating-whatsapp"

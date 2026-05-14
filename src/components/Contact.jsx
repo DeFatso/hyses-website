@@ -8,7 +8,7 @@ const Contact = () => {
         <div className="contact-left">
           <p className="contact-label">Get In Touch</p>
 
-          <h2>Let’s Talk Hydraulics</h2>
+          <h2>Let's Talk Hydraulics</h2>
 
           <p className="contact-intro">
             Need hydraulic repairs, engineering support, field service, or
@@ -41,10 +41,10 @@ const Contact = () => {
             </div>
 
             <div className="contact-info-card">
-              <span>👥</span>
+              <span>📱</span>
               <div>
                 <h4>Direct Contacts</h4>
-                <p>Leeroy: +27 66 201 3689</p>
+                <p>Leeroy: +27 66 520 3741</p>
                 <p>Willing: +27 81 470 7892</p>
               </div>
             </div>
