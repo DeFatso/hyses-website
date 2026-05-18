@@ -4,6 +4,13 @@ import "../styles/AboutHero.css";
 import { ArrowRight, Award, Clock, HeartHandshake } from "lucide-react";
 
 const AboutHero = () => {
+  const handleScrollToInfo = () => {
+    const aboutInfoSection = document.querySelector('.about-info');
+    if (aboutInfoSection) {
+      aboutInfoSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="about-hero">
       {/* Animated background elements */}
@@ -86,7 +93,7 @@ const AboutHero = () => {
           </div>
         </div>
 
-        <button className="about-cta">
+        <button className="about-cta" onClick={handleScrollToInfo}>
           Learn More About Us
           <ArrowRight size={18} />
         </button>

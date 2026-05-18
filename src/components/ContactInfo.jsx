@@ -48,9 +48,8 @@ const ContactInfo = () => {
               <span className="contact-detail-icon">📱</span>
 
               <div>
-                <h4>Direct Contacts</h4>
-                <p>Leeroy: +27 66 520 3741</p>
-                <p>Willing: +27 81 470 7892</p>
+                <h4>WhatsApp</h4>
+                <p>+27 66 520 3741</p>
               </div>
             </div>
           </div>
